@@ -1,0 +1,49 @@
+<div id="footer">
+    <div id="footer1" style="margin-top: 30px;">
+        <div id="footer11">
+            <ul type="none">
+                <li>ABOUT RAKTASANCHAR</li>
+                <br>
+                <li><a href="#">CONTACT RAKTASANCHAR</a></li>
+                <li><a href="#">PARTNERS</a></li>
+                <li><a href="#">SOCIAL RESPONSIBILITIES</a></li>
+                <li><a href="#">SUPPORT</a></li>
+                <li><a href="#">AWARDS</a></li>
+            </ul>
+        </div>
+        <div id="footer12">
+            <ul type="none">
+                <li>SERVICES</li>
+                <br>
+                <li><a href="#">RAKTASANCHAR ID</a></li>
+                <li><a href="#">RED CROSS</a></li>
+                <li><a href="#">SUPPORT</a></li>
+                <li><a href="#">QNA</a></li>
+                <li><a href="#">CONTACT SUPPORT</a></li>
+            </ul>
+        </div>
+        <div id="footer13">
+            <ul type="none">
+                <li>RESOURCES</li><br>
+                <li><a href="#">WHERE TO DONATE</a></li>
+                <li><a href="#">INFORMATION</a></li>
+                <li><a href="#">DONATION CAMP</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="footer2">
+        <?php
+		require_once("DBConnect.php");
+
+            $sql = "SELECT * FROM `content` WHERE `title`='footer'";
+            $result = mysqli_query($conn, $sql);
+            $row = mysqli_fetch_assoc($result);
+            
+            ?>
+            <p>
+                <?=$row["description"];?>
+            </p>
+
+    </div>
+</div>

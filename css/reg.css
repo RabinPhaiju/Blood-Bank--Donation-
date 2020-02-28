@@ -1,0 +1,83 @@
+#reg {
+    text-align: center;
+    background-color: #1e2c37;
+    border-radius: 5px;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: -10%;
+    /* margin-bottom: 12.4%; */
+    /* height: 470px; */
+    opacity: 0.95;
+}
+
+@media only screen and (max-width: 1300px) {
+    #reg {
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+}
+
+#reg a {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: grey;
+    color: white;
+}
+
+#reg a #regactive {
+    background-color: #1ab188;
+}
+
+#reg #change a:hover {
+    background-color: #1ab188;
+}
+
+#reg #change {
+    padding: 40px 0 0 0;
+}
+
+#reg #form input[type=password],
+#reg #form input[type=email] {
+    width: 70%;
+    background-color: #1e2c37;
+    padding: 5px 10px;
+    font-size: 22px;
+    backgroud: none;
+    color: white;
+    border: 1px solid #a0b3b0;
+}
+
+#reg #form input[type=text] {
+    width: 33%;
+    background-color: #1e2c37;
+    padding: 5px 10px;
+    font-size: 22px;
+    color: white;
+    backgroud: none;
+    border: 1px solid #a0b3b0;
+}
+
+#reg #form input[type=submit] {
+    width: 70%;
+    color: white;
+    /* padding: 12px; */
+    background-color: #1ab188;
+    padding: 10px 0px;
+    margin-left: 2%;
+    font-size: 22px;
+    backgroud: none;
+    border: 1px solid #a0b3b0;
+}
+
+#reg #form input[type=submit]:hover {
+    background-color: #1acc88;
+    cursor: pointer;
+}
+
+#reg #logtext {
+    color: white;
+    font-size: 30px;
+    margin-top: -30px;
+    font-weight: 300;
+    margin: 0 0 20px 0;
+}
