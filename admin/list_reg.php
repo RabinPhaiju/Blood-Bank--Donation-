@@ -171,7 +171,9 @@ if (isset($_POST['submit'])) {
         <?php
         if($usertype!="staff"){
 	?>
-		<td><a href="edit_reg.php?regid=<?= $row['reg_id'];?>"><i class="fa fa-pencil" aria-hidden="true"></i></a> | <a onclick="return confirm('Are you sure you want to delete this entry?')" href="delete_reg.php?regid=<?= $row['reg_id'];?>"><i style="color: red;" class="fa fa-trash" aria-hidden="true"></i></a>|<a href="verify_reg.php?regid=<?= $row['reg_id'];?>">verify</a></td>
+		<td><a href="edit_reg.php?regid=<?= $row['reg_id'];?>"><i class="fa fa-pencil" aria-hidden="true"></i></a> | 
+		<a onclick="return confirm('Are you sure you want to delete this entry?')" href="delete_reg.php?regid=<?= $row['reg_id'];?>"><i style="color: red;" class="fa fa-trash" aria-hidden="true"></i></a>
+		|<a href="verify_reg.php?regid=<?= $row['reg_id'];?>">verify</a></td>
 		<?php } ?>
 	</tr>
 
