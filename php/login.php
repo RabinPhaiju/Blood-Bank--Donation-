@@ -20,7 +20,7 @@ if(isset($_POST['submit'])){
 
 	$sql = "SELECT * FROM `register` WHERE `username`='$u' AND `password`='$p';";
 	//echo $sql;
-	require_once('../DBConnect.php');
+	require_once('DBConnect.php');
 	$result = mysqli_query($conn, $sql);
 	if (mysqli_num_rows($result) > 0) {
 		// echo "Login Successful";exit;
@@ -77,7 +77,7 @@ if(isset($_POST['submit'])){
         <div class="main_menu">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container box_1620">
-                    <a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt=""></a>
+                    <a class="navbar-brand logo_h" href="../index.php"><img src="../img/logo.png" alt=""></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>

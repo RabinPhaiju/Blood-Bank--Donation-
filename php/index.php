@@ -11,7 +11,7 @@ if (isset($_POST['resent'])) {
         $k[4] = $characters[rand(0, strlen($characters))];
         $k[5] = $characters[rand(0, strlen($characters))];
 $sql9 = "UPDATE `register` SET `secret_key`='$k' WHERE `username`='$b';";
-require_once("../DBConnect.php");
+require_once("DBConnect.php");
 mysqli_query($conn, $sql9);
             $sql7 = "SELECT * FROM `register` WHERE `username`='$b';";   
             $result7 = mysqli_query($conn, $sql7);
@@ -189,7 +189,7 @@ else {
       $b=$_SESSION['username'];}
       $bname=$b.".jpg";
       if(empty($errors)==true){
-         move_uploaded_file($file_tmp,"../files/".$bname);
+         move_uploaded_file($file_tmp,"files/".$bname);
     if(isset($_SESSION['usergoogle'])){
          $sql= "UPDATE `register` SET `pic`='$bname' WHERE `email`='$b'";}
              else{
@@ -423,27 +423,27 @@ else {
 <table id="adduser">
     <tr><?php
         if($prev_data['pic']==NULL){
-            $filepath="../files/profile.png";
+            $filepath="files/profile.png";
         echo "<img src=".$filepath." height=200 />";
         }
         else{
-         $filepath="../files/".$prev_data['pic'];
+         $filepath="files/".$prev_data['pic'];
         echo "<img src=".$filepath." height=200 />";
         }
         ?>
     </tr>
 	<tr>
 		<td>First Name:</td>
-		<td><input type="text" name="firstname"  required="required" value="<?= $prev_data['firstname'];?>"></td>
+		<td><input type="text" name="firstname" class="form-control"  required="required" value="<?= $prev_data['firstname'];?>"></td>
 	</tr>
 	<tr>
 		<td>Last Name:</td>
-		<td><input type="text" name="lastname"  required="required" value="<?= $prev_data['lastname'];?>"></td>
+		<td><input type="text" name="lastname" class="form-control" required="required" value="<?= $prev_data['lastname'];?>"></td>
 	</tr>
 	<tr>
 		<td>Address:</td>
 		<td>
-			<select required="required" name="location" title="Choose Location">
+			<select required="required" name="location" class="form-control" title="Choose Location">
 				<option value="<?=$prev_data['location'];?>"><?=$prev_data['location'];?></option>
 					<option value="Bhaktapur">Bhaktapur</option>
 					<option value="Biratnagar">Biratnagar</option>
@@ -458,20 +458,20 @@ else {
 	</tr>
 	<tr>
 		<td>Phone:</td>
-		<td><input type="number" name="contact" required="required" value="<?= $prev_data['contact'];?>"></td>
+		<td><input type="number" name="contact" class="form-control" required="required" value="<?= $prev_data['contact'];?>"></td>
     </tr>
     <tr>
 		<td>Email:</td>
-		<td><input type="email" name="email" required="required" value="<?= $prev_data['email'];?>" ></td>
+		<td><input type="email" name="email" class="form-control" required="required" value="<?= $prev_data['email'];?>" ></td>
 	</tr>
 	<tr>
 		<td>DoB:</td>
-		<td><input type="date" name="dob" required="required" value="<?= $prev_data['dob'];?>" ></td>
+		<td><input type="date" name="dob" class="form-control" required="required" value="<?= $prev_data['dob'];?>" ></td>
 	</tr>
 	<tr>
 		<td>Bloodtype:</td>
 		<td>
-			<select required="required" name="bloodtype" title="Choose bloodtype">
+			<select required="required" class="form-control" name="bloodtype" title="Choose bloodtype">
 					<option value="<?= $prev_data['bloodtype'];?>"><?= $prev_data['bloodtype'];?></option>
 					<option value="O -ve"> O -ve</option>
 					<option value="O +ve"> O +ve</option>
@@ -487,7 +487,7 @@ else {
 	
 	<tr>
 		<td>&nbsp;</td>
-		<td><input type="submit" name="add_user" value="UPDATE"></td>
+		<td><input type="submit" class="form-control" name="add_user" value="UPDATE"></td>
 	</tr>
 </table>
 </form>
