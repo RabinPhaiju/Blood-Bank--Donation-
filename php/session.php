@@ -12,7 +12,7 @@ if(isset($_SESSION['usergoogle']) || isset($_SESSION['username']) ){
         $sql = "SELECT email from `register` where `email`='$p'";
         $result2 = $conn-> query($sql);
         if($result2-> num_rows ==0){
-            require_once('../DBConnect.php');
+            require_once('DBConnect.php');
             $sql1 ="INSERT INTO `register`(`username`,`firstname`,`lastname`,`email`,`password`,`verified`,`status`) VALUES ('$n','$fn','$ln','$p','$n','1','1')";
             if(mysqli_query($conn1, $sql1)){
             }
@@ -21,7 +21,7 @@ if(isset($_SESSION['usergoogle']) || isset($_SESSION['username']) ){
     } 
 else{
 $p=$_SESSION['username'];
-require_once('../DBConnect.php');
+require_once('DBConnect.php');
 if($conn-> connect_error){
  		die("Connection failed:". $conn-> connect_error);
  	}

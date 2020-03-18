@@ -8,16 +8,16 @@
     <title></title>
     <link rel="icon" href="img/Fevicon.png" type="image/png">
 
-    <link rel="stylesheet" href="vendors/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="vendors/fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="vendors/themify-icons/themify-icons.css">
-    <link rel="stylesheet" href="vendors/linericon/style.css">
-    <link rel="stylesheet" href="vendors/owl-carousel/owl.theme.default.min.css">
-    <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="vendors/flat-icon/font/flaticon.css">
+    <link rel="stylesheet" href="../vendors/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../vendors/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../vendors/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="../vendors/linericon/style.css">
+    <link rel="stylesheet" href="../vendors/owl-carousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../vendors/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/magnific-popup.css">
+    <link rel="stylesheet" href="../vendors/flat-icon/font/flaticon.css">
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <style>
 		#content{
 			background-image: linear-gradient(#607aa0, #88a0bf);
@@ -84,7 +84,7 @@
         <div class="main_menu">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container box_1620">
-                    <a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt=""></a>
+                    <a class="navbar-brand logo_h" href="../index.php"><img src="../img/logo.png" alt=""></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -93,7 +93,7 @@
 
                     <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                         <ul class="nav navbar-nav menu_nav justify-content-end">
-                            <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.php">Home</a></li>
                             <li class="nav-item"><a class="nav-link" href="about.php">About</a></li>
                             <li class="nav-item active"><a class="nav-link" href="whocandonate.php">Who can Donate</a>
                                 <li class="nav-item submenu dropdown">
@@ -357,19 +357,19 @@
                 <div class="row">
                     <div class="col-sm-6 col-lg-4 mb-3 mb-lg-0">
                         <div class="sponsor-single">
-                            <img class="img-fluid" src="img/home/sponsor1.png" alt="">
+                            <img class="img-fluid" src="../img/home/sponsor1.png" alt="">
                         </div>
                     </div>
 
                     <div class="col-sm-6 col-lg-4 mb-3 mb-lg-0">
                         <div class="sponsor-single">
-                            <img class="img-fluid" src="img/home/sponsor2.png" alt="">
+                            <img class="img-fluid" src="../img/home/sponsor2.png" alt="">
                         </div>
                     </div>
 
                     <div class="col-sm-6 col-lg-4 mb-3 mb-lg-0">
                         <div class="sponsor-single">
-                            <img class="img-fluid" src="img/home/sponsor3.png" alt="">
+                            <img class="img-fluid" src="../img/home/sponsor3.png" alt="">
                         </div>
                         
                     </div>
@@ -388,15 +388,15 @@
 
 
 
-    <script src="vendors/jquery/jquery-3.2.1.min.js"></script>
-    <script src="vendors/bootstrap/bootstrap.bundle.min.js"></script>
-    <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-    <script src="vendors/Magnific-Popup/jquery.magnific-popup.min.js"></script>
-    <script src="js/jquery.ajaxchimp.min.js"></script>
-    <script src="js/mail-script.js"></script>
-    <script src="js/countdown.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="../vendors/jquery/jquery-3.2.1.min.js"></script>
+    <script src="../vendors/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="../vendors/owl-carousel/owl.carousel.min.js"></script>
+    <script src="../vendors/Magnific-Popup/jquery.magnific-popup.min.js"></script>
+    <script src="../js/jquery.ajaxchimp.min.js"></script>
+    <script src="../js/mail-script.js"></script>
+    <script src="../js/countdown.js"></script>
+    <script src="../js/jquery.magnific-popup.min.js"></script>
+    <script src="../js/main.js"></script>
 
 
 

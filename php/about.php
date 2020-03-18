@@ -8,16 +8,16 @@
     <title></title>
     <link rel="icon" href="img/Fevicon.png" type="image/png">
 
-    <link rel="stylesheet" href="vendors/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="vendors/fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="vendors/themify-icons/themify-icons.css">
-    <link rel="stylesheet" href="vendors/linericon/style.css">
-    <link rel="stylesheet" href="vendors/owl-carousel/owl.theme.default.min.css">
-    <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="vendors/flat-icon/font/flaticon.css">
+    <link rel="stylesheet" href="../vendors/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../vendors/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../vendors/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="../vendors/linericon/style.css">
+    <link rel="stylesheet" href="../vendors/owl-carousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../vendors/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/magnific-popup.css">
+    <link rel="stylesheet" href="../vendors/flat-icon/font/flaticon.css">
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
@@ -27,7 +27,7 @@
         <div class="main_menu">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container box_1620">
-                    <a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt=""></a>
+                    <a class="navbar-brand logo_h" href="../index.php"><img src="../img/logo.png" alt=""></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -36,9 +36,9 @@
 
                     <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                         <ul class="nav navbar-nav menu_nav justify-content-end">
-                            <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="about.php">About</a></li>
-                            <li class="nav-item active"><a class="nav-link" href="whocandonate.php">Who can Donate</a>
+                            <li class="nav-item"><a class="nav-link" href="../index.php">Home</a></li>
+                            <li class="nav-item active"><a class="nav-link" href="about.php">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="whocandonate.php">Who can Donate</a>
                                 <li class="nav-item submenu dropdown">
                                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Donation Camp</a>
                                     <ul class="dropdown-menu">
@@ -56,7 +56,7 @@
                         </ul>
 
                         <ul class="nav-right text-center text-lg-right py-4 py-lg-0">
-                            <li><a href="php/login.php">Join Us</a></li>
+                            <li><a href="login.php">Join Us</a></li>
                         </ul>
                     </div>
                 </div>
@@ -72,7 +72,7 @@
             <span class="hero-banner-icon"><i class="flaticon-drop"></i></span>
             <p>A drop of blood can save my life.</p>
             <h1>Bhaktapur Rakta-Sanchar</h1>
-            <a class="button button-header" href="php/login.php">Donate</a>
+            <a class="button button-header" href="login.php">Donate</a>
         </div>
     </section>
     <!--================Hero Banner Area End =================-->
@@ -81,14 +81,32 @@
     <!--================ Innovation section Start =================-->
     <section class="section-padding--small bg-gray">
         <div class="container">
-        <h3 style="color: white; border-radius: 4px; margin: -1px -16px 0 -15px; text-align: center; background-color: #003380; padding: 5px 0 5px 5px;">Who Can Donate</h3>
+            <div class="row">
+                <div class="col-lg-6 align-self-center mb-5 mb-lg-0">
+                    <div class="innovative-wrapper">
+                        <h3 class="primary-text">About Us <br class="d-none d-xl-block"> </h3>
+                     
         <?php
 				require_once("DBConnect.php");
-$sql = "SELECT * FROM `content` WHERE `title`='who can donate'";
+$sql = "SELECT * FROM `content` WHERE `title`='about'";
 $result = mysqli_query($conn, $sql);
 $row = mysqli_fetch_assoc($result);
 ?>
             <?=$row["description"];?>
+                <br>
+                <b>Project by </b><br><span style="font-family:sans; font-size:13px;"> Rabin (740329)</span><br>
+                <span style="font-family:sans; font-size:13px;"> Rabin (740329)</span>
+                <br>
+
+
+                    </div>
+                </div>
+                <div class="col-lg-6 pl-xl-5">
+
+     
+
+                   
+                </div>
             </div>
         </div>
     </section>
@@ -112,19 +130,19 @@ $row = mysqli_fetch_assoc($result);
                 <div class="row">
                     <div class="col-sm-6 col-lg-4 mb-3 mb-lg-0">
                         <div class="sponsor-single">
-                            <img class="img-fluid" src="img/home/sponsor1.png" alt="">
+                            <img class="img-fluid" src="../img/home/sponsor1.png" alt="">
                         </div>
                     </div>
 
                     <div class="col-sm-6 col-lg-4 mb-3 mb-lg-0">
                         <div class="sponsor-single">
-                            <img class="img-fluid" src="img/home/sponsor2.png" alt="">
+                            <img class="img-fluid" src="../img/home/sponsor2.png" alt="">
                         </div>
                     </div>
 
                     <div class="col-sm-6 col-lg-4 mb-3 mb-lg-0">
                         <div class="sponsor-single">
-                            <img class="img-fluid" src="img/home/sponsor3.png" alt="">
+                            <img class="img-fluid" src="../img/home/sponsor3.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -142,15 +160,15 @@ $row = mysqli_fetch_assoc($result);
 
 
 
-    <script src="vendors/jquery/jquery-3.2.1.min.js"></script>
-    <script src="vendors/bootstrap/bootstrap.bundle.min.js"></script>
-    <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-    <script src="vendors/Magnific-Popup/jquery.magnific-popup.min.js"></script>
-    <script src="js/jquery.ajaxchimp.min.js"></script>
-    <script src="js/mail-script.js"></script>
-    <script src="js/countdown.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="../vendors/jquery/jquery-3.2.1.min.js"></script>
+    <script src="../vendors/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="../vendors/owl-carousel/owl.carousel.min.js"></script>
+    <script src="../vendors/Magnific-Popup/jquery.magnific-popup.min.js"></script>
+    <script src="../js/jquery.ajaxchimp.min.js"></script>
+    <script src="../js/mail-script.js"></script>
+    <script src="../js/countdown.js"></script>
+    <script src="../js/jquery.magnific-popup.min.js"></script>
+    <script src="../js/main.js"></script>
 
 
 

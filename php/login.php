@@ -87,22 +87,22 @@ if(isset($_POST['submit'])){
                     <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                         <ul class="nav navbar-nav menu_nav justify-content-end">
                             <li class="nav-item"><a class="nav-link" href="../index.php">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="../about.php">About</a></li>
-                            <li class="nav-item"><a class="nav-link" href="../whocandonate.php">Who can Donate</a>
+                            <li class="nav-item"><a class="nav-link" href="about.php">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="whocandonate.php">Who can Donate</a>
                                 <li class="nav-item submenu dropdown">
                                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Donation Camp</a>
                                     <ul class="dropdown-menu">
-                                        <li class="nav-item"><a class="nav-link" href="../bhaktapur.php">Bhaktapur</a>
-                                            <li class="nav-item"><a class="nav-link" href="../kathmandu.php">Kathmandu</a>
-                                                <li class="nav-item"><a class="nav-link" href="../lalitpur.php">Lalitpur</a>
+                                        <li class="nav-item"><a class="nav-link" href="bhaktapur.php">Bhaktapur</a>
+                                            <li class="nav-item"><a class="nav-link" href="kathmandu.php">Kathmandu</a>
+                                                <li class="nav-item"><a class="nav-link" href="lalitpur.php">Lalitpur</a>
                                     </ul>
                                     </li>
 
                                     <li class="nav-item submenu dropdown">
-                                        <a href="../gallery.php" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">Gallery</a>
+                                        <a href="gallery.php" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">Gallery</a>
 
                                     </li>
-                                    <li class="nav-item"><a class="nav-link" href="../contact.php">Contact</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="contact.php">Contact</a></li>
                         </ul>
 
                         <ul class="nav-right text-center text-lg-right py-4 py-lg-0">
@@ -172,7 +172,7 @@ if(isset($_POST['submit'])){
 
 </body>
  <!-- ================ start footer Area ================= -->
- <?php include('../footer.html');?>
+ <?php include('footer.html');?>
     <!-- ================ End footer Area ================= -->
 
 
