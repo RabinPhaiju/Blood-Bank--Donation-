@@ -1,0 +1,23 @@
+<div id="log">
+    <div id="change">
+        <a style=" background-color: #1ab188;" href="login.php">Login</a><a href="reg.php">Resgister</a>
+    </div>
+    <div id="logtext">
+        <p>Welcome Back!</p>
+    </div>
+    <div id="form">
+        <form method="POST" action="">
+            <input type="text" name="username" placeholder="Username*" required="required"><br><br>
+            <input type="password" name="password" placeholder="Password*" required="required"><br><br>
+            <input type="checkbox" name="remember_me" id="lf" <?php if(isset($_COOKIE[ "member_login"])) { ?> checked
+            <?php } ?> />
+            <label for="lf-me">Remember me</label><br><br>
+
+            <input type="submit" name="submit" value="Login" id="lf"><br><br>
+            <!-- <input type="button" onclick="window.location='<?php echo $loginURL ?>';" value="Login with Google" id="lf"> -->
+        </form>
+    </div>
+    <div style="margin-top:15px; color:white; padding:1px,1px">
+        <a href="reset_pass.php" title="Reset Password"> Reset Password</a>
+    </div>
+</div>

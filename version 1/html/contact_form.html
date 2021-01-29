@@ -1,0 +1,25 @@
+<div id="contactform" style="border:1px solid #003380; border-radius: 4px; width: 95%; padding: 0 15px 5px 5px;">
+		<h3 style="color: white; border-radius: 4px; margin: -1px -16px 0 -6px; text-align: center; background-color: #003380; padding: 5px 0 5px 5px;">Contact US</h3>
+<form action="" method="POST">
+	<!-- <fieldset style="border-radius:6px; width:60%; margin-left:18%;"> -->
+		<legend style="color: black; font-size: 25px; font-family: serif;">Infomation</legend>
+		<label >Name</label>
+		<input type="text" name="username" value="<?php if(!isset($name_error) && isset($username)){echo $username;} ?>" placeholder="<?php if(isset($name_error)){echo $name_error." ";}if(isset($username)){echo $username;} else {echo "Full Name";}  ?>" required> <br>
+		<label>Email</label>
+		<input type="Email" name="email" value="<?php if(!isset($email_error) && isset($email)){echo $email;} ?>" placeholder="<?php if(isset($email_error)){echo $email_error." ";}if(isset($email)){echo $email;} else {echo "Email Address";}  ?>" required><br>
+		<label>Phone</label>
+		<input type="Phone" name="phone" value="<?php if(!isset($phone_error) && isset($phone)){echo $phone;} ?>" placeholder="<?php if(isset($phone_error)){echo $phone_error." ";}if(isset($phone)){echo $phone;} else {echo "Phone Number";}  ?>" required>
+	  <br>
+		<label>Message </label>
+		<input style="margin-left: -0px;" type="message" value="<?php if(isset($message)){echo $message;} ?>" name="message" placeholder="Type your message">
+		
+		<br>
+    <?php  $ran=rand(111111,999999);?>
+    <label><?php echo $ran ?> </label>
+    <input type="text" name ="type" value="<?php if(isset($ran)){echo $ran;} ?>" hidden>
+    <input type="text" name ="retype" placeholder="<?php if(isset($type_error)){echo $type_error." ";} else {echo "Type Number";} ?>" required>
+	  <br>
+		<input type="submit" name="submit" value="submit">
+	<!-- </fieldset> -->
+</form>
+</div>

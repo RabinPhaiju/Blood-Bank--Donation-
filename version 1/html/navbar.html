@@ -1,0 +1,48 @@
+	<div id="sitename"><a href="index.php"></a><div style="margin-top:-8px;">Rakta</div><div style="margin-top:-25px;">Sanchar</div></div>
+	<div id="navbar">
+			<div id="navbar-right">
+				<div ><a class="active" href="index.php" title="HOME">&nbsp<i class="fa fa-home fa-2x" aria-hidden="true"></i>&nbsp&nbsp</a></div>
+				<div class="dropdown" style="float:left;">
+  					<button class="dropbtn">Donation Camp</button>
+  					<div class="dropdown-content" id="dropdown-content">
+						  <a href="php/bhaktapur.php">Bhaktapur&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+						  <a href="php/kathmandu.php">Kathmandu&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+						  <a href="php/lalitpur.php"> Lalitpur&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+  					</div>
+				</div>
+				<div style="float:left;">
+				<!--<a href="php/bhaktapur.php">DonationCamp</a>-->
+				<a class="active" href="php/whocandonate.php" title="Donation">Who Can Donate</a>
+				<a class="active" href="php/Gallery.php" title="Gallery">Gallery</a>
+				<a class="active" href="php/contactus.php" title="Contactus">Contact US</a>
+				<a class="active" href="php/about.php" title="About">About Us</a>
+				</div>
+				<div class="search-container">
+					<form action="https://www.google.com/search" method="GET">
+						<input type="text" placeholder="Search.." name="q">
+						<button type="submit"><i class="fa fa-search" aria-hidden="true" style="padding: 2px 2px 2px 2px;"></i></button>
+					</form>
+				</div>
+			</div>
+			<div  id="navlogin" style="margin-top: 7px; padding-right: 14px;">
+			    <?php
+			    if(!isset($_SESSION['username'])) { 
+			    ?>
+				<form style="float: left;" action="php/reg.php">
+					<button type="submit">Signup</button>
+				</form>
+				<form style="float: left;" action="php/login.php">
+					<button type="submit">Login</button>
+				</form>
+				<?php } else { ?>
+				 <a href="php/logout.php" title="Logout"><i class="fa fa-sign-out fa-lg">Logout</i> </a>
+				 <?php } ?>
+			</div>
+			<?php
+			    if(isset($_SESSION['username'])) { 
+			    ?>
+			<div style="float:right; margin-top:7px; color:lightgrey;">
+			<a href="php/index.php" title="profile"><?php echo $_SESSION['username'] ?> :  </a>
+			</div>
+			<?php } ?>
+		</div>

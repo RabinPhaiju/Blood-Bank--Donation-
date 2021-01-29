@@ -1,0 +1,12 @@
+<div id="content" style="float:left;">
+    <div style="border:1px solid #003380; border-radius: 4px; width: 95%; padding: 0 15px 5px 15px;">
+        <h3 style="color: white; border-radius: 4px; margin: -1px -16px 0 -15px; text-align: center; background-color: #003380; padding: 5px 0 5px 5px;">Who Can Donate</h3>
+        <?php
+				require_once("DBConnect.php");
+$sql = "SELECT * FROM `content` WHERE `title`='who can donate'";
+$result = mysqli_query($conn, $sql);
+$row = mysqli_fetch_assoc($result);
+?>
+            <?=$row["description"];?>
+    </div>
+</div>

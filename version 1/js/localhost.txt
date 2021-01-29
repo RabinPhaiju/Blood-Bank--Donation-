@@ -1,0 +1,11 @@
+<?php
+$conn = mysqli_connect("localhost", "id11005287_nepalraktasanchar","rabin","id11005287_nepalraktasanchar");
+$sql = "SELECT * FROM `content` WHERE `title`='activities'";
+$result = mysqli_query($conn, $sql);
+$row = mysqli_fetch_assoc($result);
+mysqli_close($conn);
+$row["description"];?>
+
+Raktasanchar------------
+pV3KMrKr7XVGdSSZEgPT----
+------------------------

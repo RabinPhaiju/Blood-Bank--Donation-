@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>sidenavbar</title>
+	<link rel="stylesheet" type="text/css" href="http://localhost/project/css/sidenavbar.css">
+</head>
+<body>
+	<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+   <?php
+   if(isset($_SESSION['username'])) { 
+			    ?>
+			    <a href="index.php" title="profile"><?php echo $_SESSION['username'] ?> </a>
+  <a href="logout.php" title="Logout"><i class="fa fa-sign-out fa-lg">Logout</i></a>
+  <?php } ?>
+  <a href="../index.php">Home</a>
+  <a style="color:white; font-size:24px; margin-top:-10px; margin-bottom:-10px;"><span style="color:red;">Donation Camp</span></a>
+  <a href="bhaktapur.php">&nbsp;&nbsp;&nbsp;&nbsp;Bhaktapur</a>
+  <a href="kathmandu.php">&nbsp;&nbsp;&nbsp;&nbsp;Kathmandu</a>
+  <a href="lalitpur.php">&nbsp;&nbsp;&nbsp;&nbsp;Lalitpur</a>
+  <a href="whocandonate.php">Who can donate</a>
+  <a href="Gallery.php">Gallery</a>
+  <a href="contactus.php">Contact US</a>
+  <a href="about.php">About Us</a>
+  <?php
+			    if(!isset($_SESSION['username'])) { 
+			    ?>
+  <a href="reg.php">Register</a>
+  <a href="login.php">Login</a>
+  <?php } ?>
+</div>
+<div id="navclick">
+<span style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+</div>
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "240px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+</body>
+</html>

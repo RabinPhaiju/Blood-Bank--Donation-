@@ -1,0 +1,45 @@
+<div id="content" style="float:left;">
+    <?php include('html/indexgallery.html');?>
+    <div style="border:1px solid #003380; border-radius: 4px; padding: 0 5px 5px 5px; margin-top: -120px;">
+        <h3 style="color: white; border-radius: 4px; margin: -1px -6px 0 -5px; background-color: #003380; padding: 5px 0 5px 5px;">ACTIVITIES</h3>
+        <?php
+        require_once("DBConnect.php");
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+$sql = "SELECT * FROM `content` WHERE `title`='activities'";
+$result = mysqli_query($conn, $sql);
+$row = mysqli_fetch_assoc($result);
+
+?>
+            <!-- <?=$row["description"];?> -->
+
+            <h3 style="color: blue">EDUCATIONAL ACTIVITIES</h3>
+            <?php
+                require_once("DBConnect.php");
+$sql = "SELECT * FROM `content` WHERE `title`='educational activities'";
+$result = mysqli_query($conn, $sql);
+$row = mysqli_fetch_assoc($result);
+?>
+                <?=$row["description"];?>
+
+                    <h3 style="color: blue">MOTIVATIONAL ACTIVITIES</h3>
+                    <?php
+                        require_once("DBConnect.php");
+$sql = "SELECT * FROM `content` WHERE `title`='motivational activities'";
+$result = mysqli_query($conn, $sql);
+$row = mysqli_fetch_assoc($result);
+?>
+                        <?=$row["description"];?>
+
+                            <h3 style="color: blue">DONATION</h3>
+                            <?php
+                                require_once("DBConnect.php");
+$sql = "SELECT * FROM `content` WHERE `title`='donation'";
+$result = mysqli_query($conn, $sql);
+$row = mysqli_fetch_assoc($result);
+
+?>
+                                <?=$row["description"];?>
+    </div>
+</div>
